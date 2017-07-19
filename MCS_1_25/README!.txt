@@ -1,0 +1,1 @@
+Copy this folder and all of its contents into the ../MQL4/Indicators folder. 

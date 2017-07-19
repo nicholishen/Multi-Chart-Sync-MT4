@@ -1,0 +1,1 @@
+The images must be installed in the MQL4/Images folder in order for the buttons to show up. Do not rename them. 
