@@ -10,7 +10,10 @@
 #property version   "1.00"
 #property strict
 #include "Synchro.mqh"
-
+#resource "\\Images\\multi1.bmp"
+#resource "\\Images\\multi2.bmp"
+#resource "\\Images\\icon_on.bmp"
+#resource "\\Images\\icon_off.bmp"
 enum ANCHOR
 {
    RIGHT_UPPER,//Upper righthand corner
@@ -167,11 +170,11 @@ void CChartObjectSync::Init(DEFAULTS def = ON,ANCHOR anchor = RIGHT_LOWER)
    ::MathSrand(::GetTickCount());
    m_anchor = anchor;
    m_button.Create(m_id,m_sync_button,0,10,10,100,100);
-   m_button.BmpNames("icon_on.bmp","icon_off.bmp");
+   m_button.BmpNames("::icon_on.bmp","::icon_off.bmp");
    //m_button.Visible(true);
    m_button.Size(25,25);
    m_button2.Create(m_id,m_multi_button,0,10,10,100,100);
-   m_button2.BmpNames("multi1.bmp","multi2.bmp");
+   m_button2.BmpNames("::multi1.bmp","::multi2.bmp");
    if(BGVC())
       m_button2.Pressed(BGVG());
    //m_button.Visible(true);

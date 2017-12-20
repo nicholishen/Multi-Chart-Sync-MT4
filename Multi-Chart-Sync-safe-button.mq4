@@ -9,7 +9,6 @@
 #property description " "
 #property description "1C3EzJHNK4kK7nEu1J56vvTnNQJ7ArjHXG (BTC donate)"
 #property description " "
-#property description "This initial Beta version will expire on 09/01/2017"
 #property icon        "Icon.ico"
 #property copyright   "nicholishen@FF"
 #property link        "http://i.imgur.com/lKcCFvn.png"
@@ -27,9 +26,6 @@ CChartObjectSync sync;
 //+------------------------------------------------------------------+
 int OnInit()
 {
-   datetime expire = D'2017.09.01';
-   if(TimeCurrent() > expire)
-      return INIT_FAILED;
    
    if(!IsDllsAllowed()) 
    { 
